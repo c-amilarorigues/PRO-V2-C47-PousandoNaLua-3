@@ -61,12 +61,12 @@ function draw()
   image(bg_img,0,0);
   push()
   fill(255);
-  text("Horizontal Velocity: " +round(vx,2),800,50);
-  text("Fuel: "+fuel,800,25);
-  text("Vertical Velocity: "+round(vy),800,75);
+  text("Velocidade Horizontal: " +round(vx,2),800,50);
+  text("Combustível: "+fuel,800,25);
+  text("Velocidade Vertical: "+round(vy),800,75);
   pop();
 
-  //fall down
+  //descida
   vy +=g;
   lander.position.y+=vy;
   lander.position.x +=vx;
